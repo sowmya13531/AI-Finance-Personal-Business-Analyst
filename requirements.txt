@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+tensorflow
+keras
+prophet
+matplotlib
+seaborn
+plotly
+streamlit
+yfinance
+transformers
+torch
+gradio
+accelerate

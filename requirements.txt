@@ -8,5 +8,8 @@ sentence-transformers
 torch
 accelerate
 prophet
-faiss
 openpyxl
+faiss-cpu 
+sentence-transformers
+tf-keras 
+tensorflow

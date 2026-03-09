@@ -2,11 +2,16 @@ import streamlit as st
 from ingestion.data_loader import load_data
 from advisor.advisor_engine import generate_advice
 
-st.set_page_config(page_title="AI Finance Advisor", layout="wide")
+st.set_page_config(page_title="💰 AI Finance Advisor", layout="wide")
 
 st.title("💰 AI Business Finance Advisor")
 
-data = load_data()
+# CACHE DATA LOADING (prevents reloading every message)
+@st.cache_data
+def get_data():
+    return load_data()
+
+data = get_data()
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
